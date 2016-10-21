@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="routeApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Routes Solo</title>
+    <script src="vendors/angular.min.js"></script>
+    <script src="vendors/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+
+    <script src="scripts/app.module.js"></script>
+    <script src="scripts/app.config.js"></script>
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <base href="/" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Literally Literary Awesomeness!</h1>
+      <a href="/home"><button>Home</button></a>
+      <a href="/wolverine"><button>Wolverine</button></a>
+      <a href="/gizmo"><button>Gizmo</button></a>
+      <a href="/marcusfenix"><button>Marcus Fenix</button></a>
+    </header>
+<!-- Use this to swap out, or could use a div with ng-view attribute -->
+    <main>
+      <button id="prev">Prev</button>
+      <button id="next">Next</button>
+      <ng-view>
+      </ng-view>
+    </main>
+
+
+    <footer ng-hide="click">
+      <p>Disclaimer: This page may be too much to handle for some people.</p>
+      <p>Please seek medical help if you experience nausea, headaches, or rectal bleeding.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+html {
+  background: url('/images/background.png');
+}
+main, header {
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 2px 2px white;
+}
+button {
+  width: 150px;
+  height: 30px;
+  font-size: 18px;
+  background: linear-gradient(yellow, red);
+}
+button:hover {
+  background: linear-gradient(lightgray, darkslategray);
+}
+img {
+  height: 400px;
+  width: auto;
+}
+#prev, #next {
+  position: relative;
+  top: 300px;
+}
+#prev {
+  left: -200px;
+}
+#next {
+  right: -200px;
+}
+.rules {
+  width: 520px;
+  margin: 0 auto;
+  text-align: left;
+}
+p {
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 0 1px 1px blue;
+  width: 500px;
+  text-align: justify;
+  margin: 10px auto;
+}
+footer {
+  position: relative;
+  text-align: center;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin-top: 150px;
+}
